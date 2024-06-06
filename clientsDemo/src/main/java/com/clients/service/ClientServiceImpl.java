@@ -9,9 +9,11 @@ import com.clients.model.entity.Client;
 import com.clients.repository.ClientRepository;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
-public class ClientServiceImpl implements ClientSevice {
+@Service
+public class ClientServiceImpl implements ClientService {
     private final ClientRepository clientRepository;
 
     @Override

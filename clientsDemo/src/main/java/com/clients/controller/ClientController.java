@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.clients.model.dto.ClientRequest;
 import com.clients.model.dto.ClientResponse;
-import com.clients.service.ClientSevice;
+import com.clients.service.ClientService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -22,35 +22,35 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/client")
 @RequiredArgsConstructor
 public class ClientController {
-    private final ClientSevice clientSevice;
+    private final ClientService clientService;
 
     @GetMapping("/find-all")
     @ResponseStatus(HttpStatus.OK)
     public List<ClientResponse> getAllClients(){
-        return clientSevice.findAllClients();
+        return clientService.findAllClients();
     }
 
     @GetMapping("/find-by.id/{id}")
     @ResponseStatus(HttpStatus.OK)
     public ClientResponse getById(@PathVariable Long id){
-        return clientSevice.findClientById(id); 
+        return clientService.findClientById(id);
     }
 
     @GetMapping("/find-by-name-email/{name}/{email}")
     @ResponseStatus(HttpStatus.OK)
     public List<ClientResponse> getByNameAndEmail(String name, String email){
-        return clientSevice.findByNameAndEmail(name, email);
+        return clientService.findByNameAndEmail(name, email);
     }
 
     @DeleteMapping("/delete-by-id/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void deleteById(@PathVariable Long id){
-        clientSevice.deleteById(id);
+        clientService.deleteById(id);
     }
 
     @PostMapping("/save")
     @ResponseStatus(HttpStatus.CREATED)
     public void saveClient(@RequestBody ClientRequest clientRequest){
-        clientSevice.saveClient(clientRequest);
+        clientService.saveClient(clientRequest);
     }
 }

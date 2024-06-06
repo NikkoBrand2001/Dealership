@@ -8,7 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.gateway</groupId>
-	<artifactId>gstewayDemo</artifactId>
+	<artifactId>gatewayDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gatewayDemo</name>
 	<description>Project for a gateway</description>
@@ -30,7 +30,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bootstrap</artifactId>
+		</dependency>
 
 	</dependencies>
 	<dependencyManagement>

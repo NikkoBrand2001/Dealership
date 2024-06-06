@@ -5,4 +5,4 @@ server:
   application:
     name:  eureka-discovery-service
   config:
-    import: optional:configserver:http://localhost:8888/
+    import: optional:config-server:http://localhost:8888

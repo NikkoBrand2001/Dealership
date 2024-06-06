@@ -8,7 +8,7 @@ import com.clients.model.dto.ClientRequest;
 import com.clients.model.dto.ClientResponse;
 
 @Service
-public interface ClientSevice {
+public interface ClientService {
     List<ClientResponse> findAllClients();
     ClientResponse findClientById(Long id);
     List<ClientResponse> findByNameAndEmail(String name, String email);

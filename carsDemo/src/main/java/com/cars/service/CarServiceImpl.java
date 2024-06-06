@@ -10,7 +10,9 @@ import com.cars.model.entity.Car;
 import com.cars.repository.CarRepository;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
+@Service
 @RequiredArgsConstructor
 public class CarServiceImpl implements CarService {
     private final CarRepository carRepository;
