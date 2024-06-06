@@ -6,8 +6,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/NikkoBrand2001/configServer
-          search-paths: configurations
+          uri: https://github.com/NikkoBrand2001/configServerV2
+          search-paths: dealerShip_configurations
           clone-on-start: true
           default-label: main
 
