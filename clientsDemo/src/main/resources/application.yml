@@ -7,6 +7,3 @@ spring:
   config:
     import: optional:config-server:http://localhost:8888
 
-  flyway:
-    enabled: true
-    locations: classpath:db/
