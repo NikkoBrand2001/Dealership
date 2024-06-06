@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/NikkoBrand2001/configServer
+          search-paths: configurations
+          clone-on-start: true
+          default-label: main
+
