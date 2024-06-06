@@ -13,5 +13,5 @@ public class ClientRequest {
     private String name; 
     private String dir; 
     private String email;
-    private long idCar;
+    private Long idCar;
 }

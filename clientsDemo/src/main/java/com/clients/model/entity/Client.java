@@ -30,7 +30,7 @@ public class Client {
     @Column(nullable = false)
     private String email;
     @Column(name = "id_car")
-    private long idCar;
+    private Long idCar;
 
     
 }

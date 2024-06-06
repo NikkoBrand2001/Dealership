@@ -1,0 +1,10 @@
+INSERT INTO clientes (name, dir, email, id_car) VALUES ('Juan Perez', '123 Calle Falsa', 'juan.perez@example.com', 1);
+INSERT INTO clientes (name, dir, email, id_car) VALUES ('Maria Lopez', '456 Avenida Siempreviva', 'maria.lopez@example.com', 2);
+INSERT INTO clientes (name, dir, email, id_car) VALUES ('Carlos Garcia', '789 Calle Real', 'carlos.garcia@example.com', 3);
+INSERT INTO clientes (name, dir, email, id_car) VALUES ('Ana Martinez', '101 Calle del Sol', 'ana.martinez@example.com', 4);
+INSERT INTO clientes (name, dir, email, id_car) VALUES ('Luis Fernandez', '202 Calle Luna', 'luis.fernandez@example.com', 5);
+INSERT INTO clientes (name, dir, email, id_car) VALUES ('Laura Gonzalez', '303 Calle Estrella', 'laura.gonzalez@example.com', 6);
+INSERT INTO clientes (name, dir, email, id_car) VALUES ('Pedro Ramirez', '404 Avenida del Mar', 'pedro.ramirez@example.com', 7);
+INSERT INTO clientes (name, dir, email, id_car) VALUES ('Sofia Torres', '505 Calle del Bosque', 'sofia.torres@example.com', 8);
+INSERT INTO clientes (name, dir, email, id_car) VALUES ('Jorge Diaz', '606 Avenida Central', 'jorge.diaz@example.com', 9);
+INSERT INTO clientes (name, dir, email, id_car) VALUES ('Carmen Jimenez', '707 Calle Flores', 'carmen.jimenez@example.com', 10);
