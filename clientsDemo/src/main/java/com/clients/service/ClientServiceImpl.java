@@ -8,11 +8,13 @@ import com.clients.model.dto.ClientResponse;
 import com.clients.model.entity.Client;
 import com.clients.repository.ClientRepository;
 
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
+
 
 @RequiredArgsConstructor
-@Service
+@Component
 public class ClientServiceImpl implements ClientService {
     private final ClientRepository clientRepository;
 
@@ -43,10 +45,8 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
-    public void deleteById(Long id) {
-       if(id == null && id == 0){
-        throw new RuntimeException("id cannot be null o 0");
-       }
+    public void deleteById(@NonNull Long id) {
+
        clientRepository.deleteById(id);
     }
 

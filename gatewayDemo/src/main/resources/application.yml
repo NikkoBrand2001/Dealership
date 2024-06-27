@@ -6,3 +6,8 @@ spring:
     name:  gateway-service
   config:
     import: optional:config-server:http://localhost:8888
+
+security:
+  jwt:
+    key:
+      private: 4e380116721cda0e8dd892649b0210b433e8801fe8cb4c12abc90b5200b6b1f4

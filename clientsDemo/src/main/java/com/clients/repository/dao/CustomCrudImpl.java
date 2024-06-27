@@ -7,11 +7,15 @@ import com.clients.model.entity.Client;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
+@Component
+@RequiredArgsConstructor
 public class CustomCrudImpl implements CustomCrud{
 
-       @PersistenceContext
-    private EntityManager entityManager;
+    @PersistenceContext
+    private final EntityManager entityManager;
 
     @Override
     public List<Client> findByNameAndEmail(String nombre, String email) {

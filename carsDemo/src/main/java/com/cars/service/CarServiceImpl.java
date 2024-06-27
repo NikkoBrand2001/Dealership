@@ -8,11 +8,12 @@ import com.cars.model.dto.CarRequest;
 import com.cars.model.dto.CarResponse;
 import com.cars.model.entity.Car;
 import com.cars.repository.CarRepository;
-
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+
+@Component
 @RequiredArgsConstructor
 public class CarServiceImpl implements CarService {
     private final CarRepository carRepository;
@@ -42,10 +43,8 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public void deleteCar(Long idCar) {
-        if (idCar == null && idCar == 0) {
-            throw new RuntimeException("invalid id.");
-        }
+    public void deleteCar(@NonNull Long idCar) {
+
         carRepository.deleteById(idCar);
     }
 
